@@ -90,7 +90,6 @@ export default function Layout({ language, onToggleLanguage }: Props) {
           </div>
           <div>
             <p className="text-sm font-semibold">{t.navContact}</p>
-            <p className="mt-3 text-sm leading-6 text-muted">{businessConfig.locality}{businessConfig.locality && businessConfig.city ? ', ' : ''}{businessConfig.city}</p>
             <WhatsAppButton language={language} className="mt-3" />
           </div>
         </div>
