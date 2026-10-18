@@ -17,7 +17,6 @@ export default function HeroSection({ language }: Props) {
             <p className="eyebrow"><span className="h-1.5 w-1.5 rounded-full bg-rose" />{t.heroEyebrow}</p>
             <h1 className="mt-6 whitespace-pre-line font-display text-5xl font-medium leading-[1.08] tracking-tight sm:text-6xl lg:text-[4.35rem]">{t.heroTitle}</h1>
             <p className="mt-6 max-w-xl text-base leading-8 text-muted sm:text-lg">{t.heroText}</p>
-            {location && <p className="mt-3 text-sm font-medium text-rose-dark">{location}</p>}
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/tailoring" className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-rose-dark">{t.exploreServices}<ArrowRight size={16} /></Link>
               <Link to="/stitching-classes" className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-6 py-3.5 text-sm font-semibold transition hover:border-rose hover:text-rose-dark">{t.learnStitching}<ArrowDownRight size={16} /></Link>
