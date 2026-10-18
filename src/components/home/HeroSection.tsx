@@ -30,11 +30,11 @@ export default function HeroSection({ language }: Props) {
             <div className="absolute -right-5 -top-5 h-32 w-32 rounded-full bg-[#ead7d0] blur-2xl" />
             <div className="relative grid grid-cols-[1.1fr_.9fr] gap-3">
               <div className="mt-12 overflow-hidden rounded-t-[48%] rounded-b-2xl bg-[#e8d8cc] p-2 shadow-soft">
-                <img src="./public/saree.png" alt="Fabric and sewing details in a tailoring workspace" className="h-[370px] w-full rounded-t-[48%] rounded-b-xl object-cover" />
+                <img src="./images/saree.png" alt="Fabric and sewing details in a tailoring workspace" className="h-[370px] w-full rounded-t-[48%] rounded-b-xl object-cover" />
               </div>
               <div className="space-y-3">
                 <div className="overflow-hidden rounded-2xl bg-[#e5c9c5] p-2">
-                  <img src="./public/fabric.png" alt="Colourful folded fabrics for garment making" className="h-[220px] w-full rounded-xl object-cover" />
+                  <img src="./images/fabric.png" alt="Colourful folded fabrics for garment making" className="h-[220px] w-full rounded-xl object-cover" />
                 </div>
                 <div className="rounded-2xl bg-white p-5 shadow-soft">
                   <Sparkles size={19} className="text-rose" />

@@ -29,8 +29,8 @@ export default function Tailoring({ language }: { language: Language }) {
             <WhatsAppSetupNotice language={language} />
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <img src="./public/bag.png" alt="Tailoring workspace and fabric details" className="h-64 w-full rounded-t-[45%] rounded-b-2xl object-cover" />
-            <img src="./public/stationary.png" alt="Colourful textiles for tailoring" className="mt-10 h-64 w-full rounded-2xl object-cover" />
+            <img src="./images/bag.png" alt="Tailoring workspace and fabric details" className="h-64 w-full rounded-t-[45%] rounded-b-2xl object-cover" />
+            <img src="./images/stationary.png" alt="Colourful textiles for tailoring" className="mt-10 h-64 w-full rounded-2xl object-cover" />
           </div>
         </div>
       </section>
