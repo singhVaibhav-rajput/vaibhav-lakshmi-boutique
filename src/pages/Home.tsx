@@ -20,6 +20,7 @@ export default function Home({ language }: { language: Language }) {
       <ExperienceSection language={language} />
       <GalleryPreview language={language} />
       <ContactCta language={language} />
+     
     </>
   )
 }

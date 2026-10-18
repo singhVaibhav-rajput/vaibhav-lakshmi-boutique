@@ -11,6 +11,7 @@ export default function HeroSection({ language }: Props) {
   const location = locationLabel()
   return (
       <section className="overflow-hidden">
+        
         <div className="container-shell grid min-h-[610px] items-center gap-10 py-14 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
           <div className="relative z-10">
             <p className="eyebrow"><span className="h-1.5 w-1.5 rounded-full bg-rose" />{t.heroEyebrow}</p>

@@ -51,7 +51,7 @@ export default function Layout({ language, onToggleLanguage }: Props) {
                 {link.label}
               </NavLink>
             ))}
-          </nav>
+          </nav>    
           <div className="hidden lg:block">
             <WhatsAppButton language={language} />
           </div>

@@ -110,6 +110,7 @@ export function Contact({ language }: { language: Language }) {
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f7e8e4] text-rose-dark">
               <MessageCircle size={22} />
             </span>
+            
             <h2 className="mt-5 font-display text-2xl">{t.enquire}</h2>
             <p className="mt-3 text-sm leading-7 text-muted">{t.contactText}</p>
             <WhatsAppButton language={language} className="mt-5" />
@@ -117,15 +118,18 @@ export function Contact({ language }: { language: Language }) {
           </div>
           <div className="rounded-3xl bg-paper p-7">
             <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-rose-dark">
-              <MapPin size={22} />
+              <a href={businessConfig.locality} target="_blank" rel="noopener noreferrer">
+                <MapPin size={22} />
+              </a>
             </span>
+            
             <h2 className="mt-5 font-display text-2xl">
               {language === "hi" ? "दुकान का पता" : "Shop location"}
             </h2>
             {location || businessConfig.address ? (
               <p className="mt-3 text-sm leading-7 text-muted">
                 {businessConfig.address || location}
-                {location && businessConfig.address ? `, ${location}` : ""}
+                
               </p>
             ) : (
               <p className="mt-3 text-sm leading-7 text-muted">
