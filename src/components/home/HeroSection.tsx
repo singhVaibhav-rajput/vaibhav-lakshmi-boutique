@@ -2,13 +2,13 @@ import { ArrowDownRight, ArrowRight, Check, Scissors, Sparkles } from 'lucide-re
 import { Link } from 'react-router-dom'
 import type { Language } from '../../content'
 import { copy } from '../../content'
-import { locationLabel } from '../../config'
+// import { locationLabel } from '../../config'
 
 type Props = { language: Language }
 
 export default function HeroSection({ language }: Props) {
   const t = copy[language]
-  const location = locationLabel()
+  // const location = locationLabel()
   return (
       <section className="overflow-hidden">
         
