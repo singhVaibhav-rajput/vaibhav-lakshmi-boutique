@@ -1,99 +1,127 @@
-# Boutique & Offline Stitching Classes Website
+# Vaibhav Lakshmi Boutique
 
-A React + TypeScript + Vite + Tailwind CSS starter for a ladies' tailoring boutique and in-person stitching classes. Includes separate SEO-oriented landing pages, Hindi/English UI toggle, and WhatsApp enquiry links.
+A modern, responsive website for Vaibhav Lakshmi Boutique, offering women's tailoring services and offline stitching classes. The website helps customers explore services, view stitching work, and contact the boutique for enquiries.
 
-## Run locally
+## ✨ Features
 
-1. Install Node.js (LTS) if needed.
-2. Extract this folder and open a terminal in it.
-3. Run:
+- **Tailoring Services:** Information about blouse, suit, kurti, and other women's clothing stitching.
+- **Stitching Classes:** Details about learning sewing, cutting, measurements, and garment making.
+- **Responsive Design:** Designed for desktop, tablet, and mobile devices.
+- **WhatsApp Enquiries:** Easy contact through WhatsApp.
+- **Bilingual Content:** Hindi and English support.
+- **Portfolio Gallery:** Photos showcasing stitching work.
+- **SEO-Friendly Pages:** Separate sections for services and classes.
 
-   ```bash
-   npm install
-   npm run dev
-   ```
+## 🛠️ Tech Stack
 
-4. Open the local URL printed by Vite.
-5. Before publishing, run `npm run build`.
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- JavaScript
+- HTML5 and CSS3
 
-## Before launch — important
+## 📁 Project Structure
 
-Open `src/config.ts` and replace only with verified details:
+```text
+mothers-boutique-site/
+├── public/
+│   └── images/          # Website images
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Website pages
+│   ├── config.ts        # Business configuration
+│   └── content.ts       # Website content
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
 
-- `name`: actual shop name
-- `city` and `locality`: actual service location
-- `whatsappNumber`: shop's WhatsApp number including India country code, digits only, e.g. `91XXXXXXXXXX`
-- `address`, `openingHours`, and `email`: add only if the owner confirms them
+*The structure above is representative; filenames may vary depending on the current implementation.*
 
-WhatsApp buttons remain inactive until a valid number is entered; the site displays a setup note instead of inventing contact details.
+## 🚀 Getting Started
 
-## Content to confirm
+### Prerequisites
 
-- Actual business name and exact locality/city
-- Verified address and opening hours
-- Course fees, duration, batch timings, availability, and materials needed
-- Whether alterations are offered
-- Real photos of finished garments and class work, with permission
-- Customer reviews (only genuine reviews)
+- Node.js
+- npm
+- Git
 
-Do not publish placeholder business information as fact.
+### Installation
 
-## SEO included
+Clone the repository:
 
-- Page-specific titles and meta descriptions via `react-helmet-async`
-- Separate routes for tailoring, blouse stitching, suit/kurti stitching, stitching classes, and cutting/measurement
-- Semantic headings and descriptive image alt text
-- Mobile-responsive layout
-- Basic Open Graph metadata
+```bash
+git clone https://github.com/singhVaibhav-rajput/vaibhav-lakshmi-boutique.git
+```
 
-## SEO still to do before production
+Navigate to the project folder:
 
-- Add a real domain and ensure canonical URLs use the full production URL (currently paths are used as a starter placeholder).
-- Add a `public/robots.txt` and `public/sitemap.xml` using the final domain.
-- Create/claim and verify the Google Business Profile.
-- Set up Google Search Console and submit the sitemap.
-- Add LocalBusiness structured data only after the real business name, address/area, phone and URL are confirmed.
-- Use prerendering/SSR if you want stronger initial HTML for crawlers; this starter uses client-side React routing.
-- Replace stock photography with original photos of the actual shop, garments and classes. Check image licences and availability before production use.
-- Consider Hindi-specific SEO titles/descriptions and correct canonical/hreflang setup if publishing fully localized URLs.
+```bash
+cd vaibhav-lakshmi-boutique
+```
 
-## Routes
+Install dependencies:
 
-- `/`
-- `/tailoring`
-- `/stitching-classes`
-- `/blouse-stitching`
-- `/suit-kurti-stitching`
-- `/cutting-measurement-course`
-- `/gallery`
-- `/about`
-- `/contact`
+```bash
+npm install
+```
 
-## Design notes
+Start the development server:
 
-Modern minimal visual direction: warm off-white background, muted rose accents, dark typography, generous spacing and responsive cards. Uses Google Fonts and remote Unsplash images in the starter; replace them with licensed/owned assets for production.
+```bash
+npm run dev
+```
 
-## Code structure (easy to edit)
+Open the local URL displayed in your terminal, usually `http://localhost:5173`.
 
-The homepage is intentionally split into small components so each section can be changed independently:
+## 🏗️ Production Build
 
-- `src/pages/Home.tsx` — assembles the homepage sections and sets homepage SEO.
-- `src/components/home/HeroSection.tsx` — top banner, headline and main buttons.
-- `src/components/home/OverviewSection.tsx` — tailoring and classes introduction cards.
-- `src/components/home/ExperienceSection.tsx` — experience section and service links.
-- `src/components/home/GalleryPreview.tsx` — gallery preview.
-- `src/components/home/ContactCta.tsx` — final WhatsApp enquiry section.
-- `src/components/Layout.tsx` — site-wide navigation and footer.
-- `src/content.ts` — all English and Hindi website text.
-- `src/config.ts` — boutique name, city, address and WhatsApp number.
-- `src/pages/` — individual pages for tailoring, classes, services, gallery, about and contact.
+To check the project and generate a production build:
 
-### Making common changes
+```bash
+npm run build
+```
 
-- **Change the boutique name/location/WhatsApp:** edit `src/config.ts`.
-- **Change English or Hindi wording:** edit `src/content.ts`.
-- **Change only the homepage top section:** edit `src/components/home/HeroSection.tsx`.
-- **Change the homepage contact panel:** edit `src/components/home/ContactCta.tsx`.
-- **Change navigation/footer:** edit `src/components/Layout.tsx`.
+To preview the production build locally:
 
-Each homepage section accepts a `language` prop and reads its wording from `src/content.ts`; this avoids duplicating text and keeps the page file short.
+```bash
+npm run preview
+```
+
+## 🌐 Deployment
+
+The website is deployed using [Vercel](https://vercel.com/).
+
+To deploy updates:
+
+1. Make and test your changes locally.
+2. Commit and push your changes to the connected GitHub repository.
+3. Vercel automatically builds and deploys the updated website.
+
+## 📸 Images
+
+Website images are stored in the `public` directory. For example, an image at `public/images/blouse.jpg` can be referenced as:
+
+```tsx
+<img src="/images/blouse.jpg" alt="Blouse stitching" />
+```
+
+Ensure image filenames and paths match exactly, including capitalization.
+
+## 🎯 Purpose
+
+This project aims to establish an online presence for a local tailoring boutique, showcase its work, provide information about stitching classes, and make customer enquiries easier.
+
+## 👩‍ sewing Services
+
+- Custom stitching for women's clothing
+- Blouse stitching
+- Suit and kurti stitching
+- Offline stitching classes
+- Cutting and measurement training
+
+## 📄 License
+
+This project is intended for the boutique's business use. Contact the project owner before reusing its branding, photographs, or other original assets.
